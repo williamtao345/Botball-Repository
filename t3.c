@@ -2,5 +2,5 @@
 
 int main()
 {
-    printf("Hellow World!;\n");
+    printf("Hellow World HEHE!;\n");
 }
