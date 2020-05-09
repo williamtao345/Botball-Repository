@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "clang Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/Botball", //设置运行程序名
+            "args": [], //这个地方用于设置命令行参数
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "clang"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clang",
+            "type": "shell",
+            "command": "make",
+            /* "args": [
+                "-g", //加调试
+                "-Wall", //加编译告警
+                "t3.c", //编译哪个源代码
+                "-o",
+                "Botball" //生成的可运行程序名
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            } */
+        }
+    ]
+}
