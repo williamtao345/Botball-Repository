@@ -37,6 +37,12 @@
 typedef int DataType;
 void set_arm(int);
 void set_hand(int);
+void catch_up_object();
+void put_down_object();
+void set_arm_position_with_two_parts(int percentage);
+void initBot();
+void catch_object(int object_number);
+int Length_CharString(char *p);
 void stop_running();
 int Insert_to_end_of_LinkList_for_tracks_recording(int left_speed, int right_speed, int time_of_running);
 void Clean_up_track_recording();
@@ -45,6 +51,7 @@ void motor_record(int left_speed, int right_speed, int time_of_running);
 void move_forward(char speed, int time_of_running);
 void set_motor(int left_wheel_speed, int right_wheel_speed, int time_of_running);
 void change_direction(int degrees);
+int move_from_file();
 void follow_object(int object_number);
 
 /* ----------------------------------LinkList---------------------------------------- */
@@ -462,7 +469,7 @@ void initBot()
     set_servo_position(hand_servo_number, hand_open_position);
 }
 /* -----------------------------------Inset Programs----------------------------------- */
-void catch_object(object_number)
+void catch_object(int object_number)
 {
     initBot();
     follow_object(object_number);
