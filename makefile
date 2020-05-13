@@ -1,8 +1,8 @@
-Botball: t3.o
-	gcc -o Botball t3.o; rm *.o
+Botball: t1.o
+	gcc -o Botball t1.o; rm *.o
 	
-t3.o:t3.c
-	gcc -c -o t3.o t3.c
+t1.o:t1.c
+	gcc -c -o t1.o t1.c
 
 clean:
 	rm *.o Botball
